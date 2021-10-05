@@ -24,7 +24,7 @@ Project I made so that I don't need to make truth tables manually
   
   Example: (a+b)(c'b)'(a/b)'
   
-- **SPECIAL COMMANDS** (type "help" to see):
+**SPECIAL COMMANDS** (type "help" to see):
   - d       -> display table
   - f       -> display as rows
   - e       -> display as csv
