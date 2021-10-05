@@ -22,7 +22,7 @@ HOW TO USE:
   / XOR operator
   ' NOT operator
   
-  Example: (a+b)(c'b)'(a/b
+  Example: (a+b)(c'b)'(a/b)'
   
 - Special commands:
   d       -> display table
