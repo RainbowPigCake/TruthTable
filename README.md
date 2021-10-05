@@ -1,7 +1,7 @@
 # TruthTable
 Project I made so that I don't need to make truth tables manually 
 
-FEATURES:
+**FEATURES**:
 - Custom input letters 
 
 - Builds truth table that you can see using boolean equations
@@ -13,7 +13,7 @@ FEATURES:
 - K-map visualizer
 
 
-HOW TO USE:
+**HOW TO USE**:
 - Enter the number of variables you want or type in the letters for the variables you want separated by commas. (Ex. "x,y,z" or "4")
 
 - Type in boolean equations:
@@ -24,7 +24,7 @@ HOW TO USE:
   
   Example: (a+b)(c'b)'(a/b)'
   
-- Special commands (type "help" to see):
+- **SPECIAL COMMANDS** (type "help" to see):
   - d       -> display table
   - f       -> display as rows
   - e       -> display as csv
