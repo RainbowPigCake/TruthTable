@@ -13,6 +13,7 @@ Project I made so that I don't need to make truth tables manually
 - K-map visualizer
 
 
+
 **HOW TO USE**:
 - Enter the number of variables you want or type in the letters for the variables you want separated by commas. (Ex. "x,y,z" or "4")
 
@@ -23,6 +24,7 @@ Project I made so that I don't need to make truth tables manually
   - ' NOT operator
   
   Example: (a+b)(c'b)'(a/b)'
+  
   
 **SPECIAL COMMANDS** (type "help" to see):
   - d       -> display table
