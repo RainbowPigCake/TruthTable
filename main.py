@@ -372,6 +372,7 @@ while True:
 				print("cnf     -> get the product of maxterms")
 				print("sum     -> get the sigma thing")
 				print("product -> get the pi thing")
+				print("k       -> display a k map for the most recent equation (max 4 var)")
 			# elif i == "I":
 			# 	print("Enter one-by-one, the truth table values\n")
 			# 	vals = []
