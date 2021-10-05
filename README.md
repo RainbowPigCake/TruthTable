@@ -17,10 +17,10 @@ HOW TO USE:
 - Enter the number of variables you want or type in the letters for the variables you want separated by commas. (Ex. "x,y,z" or "4")
 
 - Type in boolean equations:
-  + OR operator
-  * AND operator
-  / XOR operator
-  ' NOT operator
+  - + OR operator
+  - * AND operator
+  - / XOR operator
+  - ' NOT operator
   
   Example: (a+b)(c'b)'(a/b)'
   
