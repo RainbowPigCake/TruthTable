@@ -24,7 +24,7 @@ HOW TO USE:
   
   Example: (a+b)(c'b)'(a/b)'
   
-- Special commands:
+- Special commands (type "help" to see):
   - d       -> display table
   - f       -> display as rows
   - e       -> display as csv
