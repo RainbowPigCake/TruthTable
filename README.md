@@ -1,6 +1,10 @@
 # TruthTable
 Project I made so that I don't need to make truth tables manually 
 
+Use this repl link to try it out!
+https://replit.com/@rainbowpigcake/TruthTable#main.py
+
+
 **FEATURES**:
 - Custom input letters 
 
