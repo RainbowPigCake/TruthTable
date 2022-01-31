@@ -128,7 +128,7 @@ class Table:
 			names.append(self.inputs[i].name)
 		return names
 	def inside_table(self, name):
-		for i in inputs:
+		for i in self.inputs:
 			if i.name == name:
 				return True
 		return False
@@ -313,7 +313,7 @@ while True:
 				t.export()
 			elif i == "R":
 				t.inputs = t.inputs[:initial]
-				t.display_as_matrix()
+				print(t)
 			elif i == "Z":
 				if len(t.inputs) > initial:
 					t.inputs.pop()
@@ -372,7 +372,12 @@ while True:
 						dnf += ")+"
 				print(dnf[:-1] + "\n")
 			elif i == "K":
-				print_kmap(initial)
+				if initial == 1:
+					print("Cannot do a k-map with one variable")
+				elif initial > 4:
+					print("More than 4 variable k-maps not supported yet!")
+				else:
+					print_kmap(initial)
 			elif i == "I":
 				inp = input("Enter a boolean output ex. '00110001': ").strip()
 				print(inp)
@@ -381,7 +386,7 @@ while True:
 					num_eq += 1
 					inp = list(inp)  
 					t.add_input(Input(name, list(map(int, inp))))
-				t.display_as_matrix()
+				print(t)
 
 			elif i == "HELP" or i == "H":
 				print("d       -> display table")
@@ -430,7 +435,6 @@ while True:
 				cleans = clean_bedmas(cleans)
 				name = name.replace("/", "⊕")
 				cleans = cleans.replace("⊕","/")
-				
 				if valid and not t.inside_table(name):
 					t.add_input(Input(name,eval(cleans).values))
 					cleans = cleans.replace("._not()","'")
@@ -438,5 +442,5 @@ while True:
 					print(t)
 					print()
 	except Exception as e:
-		print("hi")
-		print(e)
+		#print(e)
+		pass
