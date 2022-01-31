@@ -127,7 +127,11 @@ class Table:
 		for i in range(len(self.inputs)):
 			names.append(self.inputs[i].name)
 		return names
-
+	def inside_table(self, name):
+		for i in inputs:
+			if i.name == name:
+				return True
+		return False
 
 def clean_bedmas(s):
 	# adds * symbols for the and operation EX: AB -> A*B and removes ALL spaces
@@ -216,6 +220,11 @@ def print_kmap(num):
 	for i in range(len(kmap)):
 		print(*kmap[i])
 
+def str_is_binary(s):
+	for i in s:
+		if i != "0" and i != "1":
+			return False
+	return True
 
 # alphabet set and array
 
@@ -290,6 +299,7 @@ print(t)
 
 while True:
 	valid = True
+	num_eq = 1
 	try:
 		# format command
 		s = remove_spaces(input("Enter an equation: ").upper().strip())
@@ -363,7 +373,17 @@ while True:
 				print(dnf[:-1] + "\n")
 			elif i == "K":
 				print_kmap(initial)
-			elif i == "HELP":
+			elif i == "I":
+				inp = input("Enter a boolean output ex. '00110001': ").strip()
+				print(inp)
+				if len(inp) == 2 ** initial and str_is_binary(inp):
+					name = f"EQ{num_eq}"
+					num_eq += 1
+					inp = list(inp)  
+					t.add_input(Input(name, list(map(int, inp))))
+				t.display_as_matrix()
+
+			elif i == "HELP" or i == "H":
 				print("d       -> display table")
 				print("f       -> display as rows")
 				print("e       -> display as csv")
@@ -374,6 +394,7 @@ while True:
 				print("sum     -> get the sigma thing")
 				print("product -> get the pi thing")
 				print("k       -> display a k map for the most recent equation (max 4 var)")
+				print("i       -> insert a boolean output")
 			# elif i == "I":
 			# 	print("Enter one-by-one, the truth table values\n")
 			# 	vals = []
@@ -410,11 +431,12 @@ while True:
 				name = name.replace("/", "⊕")
 				cleans = cleans.replace("⊕","/")
 				
-				if valid:
+				if valid and not t.inside_table(name):
 					t.add_input(Input(name,eval(cleans).values))
 					cleans = cleans.replace("._not()","'")
 					print(cleans)
 					print(t)
 					print()
-	except:
-		pass
+	except Exception as e:
+		print("hi")
+		print(e)
