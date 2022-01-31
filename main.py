@@ -296,10 +296,9 @@ while not flag:
 t = Table(inputs)
 
 print(t)
-
+num_eq = 1
 while True:
 	valid = True
-	num_eq = 1
 	try:
 		# format command
 		s = remove_spaces(input("Enter an equation: ").upper().strip())
@@ -386,7 +385,7 @@ while True:
 					num_eq += 1
 					inp = list(inp)  
 					t.add_input(Input(name, list(map(int, inp))))
-				print(t)
+					print(t)
 
 			elif i == "HELP" or i == "H":
 				print("d       -> display table")
