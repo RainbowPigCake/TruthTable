@@ -41,3 +41,5 @@ https://replit.com/@rainbowpigcake/TruthTable#main.py
   - sum     -> get the sigma thing
   - product -> get the pi thing
   - k       -> display a k map for the most recent equation (max 4 var)
+  - d       -> display table
+  - i       -> insert a boolean output
