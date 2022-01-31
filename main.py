@@ -303,6 +303,7 @@ while True:
 				t.export()
 			elif i == "R":
 				t.inputs = t.inputs[:initial]
+				t.display_as_matrix()
 			elif i == "Z":
 				if len(t.inputs) > initial:
 					t.inputs.pop()
