@@ -25,7 +25,7 @@ https://replit.com/@rainbowpigcake/TruthTable#main.py
   - \+ OR operator
   - \* AND operator
   - / XOR operator
-  - ' NOT operator
+  - ' NOT operator (unary)
   
   Example: (a+b)(c'b)'(a/b)'
   
