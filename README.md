@@ -31,15 +31,17 @@ https://replit.com/@rainbowpigcake/TruthTable#main.py
   
   
 # **Special Commands** (type "help" to see)
-  - d       -> display table
-  - f       -> display as rows
-  - e       -> display as csv
-  - r       -> reset table
-  - z       -> undo most recent operation
-  - dnf     -> get the sum of minterms
-  - cnf     -> get the product of maxterms
-  - sum     -> get the sigma thing
-  - product -> get the pi thing
-  - k       -> display a k map for the most recent equation (max 4 var)
-  - d       -> display table
-  - i       -> insert a boolean output
+| Key    | Description |
+| -------- | ------- |
+|  d       | display table
+|  f       | display as rows
+|  e       | display as csv
+|  r       | reset table
+|  z       | undo most recent operation
+|  dnf     | get the sum of minterms
+|  cnf     | get the product of maxterms
+|  sum     | get the sigma thing
+|  product | get the pi thing
+|  k       | display a k map for the most recent equation (max 4 var)
+|  d       | display table
+|  i       | insert a boolean output
