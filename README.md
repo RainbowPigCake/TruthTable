@@ -5,7 +5,7 @@ Use this repl link to try it out!
 https://replit.com/@rainbowpigcake/TruthTable#main.py
 
 
-**FEATURES**:
+# **FEATURES**:
 - Custom input letters 
 
 - Builds truth table that you can see using boolean equations
@@ -18,7 +18,7 @@ https://replit.com/@rainbowpigcake/TruthTable#main.py
 
 
 
-**HOW TO USE**:
+# **HOW TO USE**:
 - Enter the number of variables you want or type in the letters for the variables you want separated by commas. (Ex. "x,y,z" or "4")
 
 - Type in boolean equations:
@@ -30,7 +30,7 @@ https://replit.com/@rainbowpigcake/TruthTable#main.py
   Example: (a+b)(c'b)'(a/b)'
   
   
-**SPECIAL COMMANDS** (type "help" to see):
+# **SPECIAL COMMANDS** (type "help" to see):
   - d       -> display table
   - f       -> display as rows
   - e       -> display as csv
