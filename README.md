@@ -44,4 +44,4 @@ https://replit.com/@rainbowpigcake/TruthTable#main.py
 |  product | get the pi thing
 |  k       | display a k map for the most recent equation (max 4 var)
 |  d       | display table
-|  i       | insert a boolean output (ex. '00110001')
+|  i       | insert a boolean output (ex. `00110001`)
